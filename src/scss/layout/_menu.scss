@@ -1,0 +1,31 @@
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $cGrey;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0);
+    transition: .3s $easeInOutCirc transform;
+    z-index: 2;
+
+    &_link {
+        font-size: 18px;
+        color: $bg_color;
+        padding: 10px 5px;
+        position: relative;
+        text-decoration: underline;
+        transition: .2s $easing opacity;
+
+        &:hover {
+            opacity: .6;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+ }
