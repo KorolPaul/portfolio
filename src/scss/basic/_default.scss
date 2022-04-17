@@ -14,7 +14,6 @@ body {
 }
 
 a {
-    text-decoration: none;
     transition: .2s $easing color;
 
     &:hover,
@@ -34,13 +33,9 @@ p {
     }
 }
 
-img {
+img,
+video {
     max-width: 100%;
-
-    h3 & {
-        vertical-align: middle;
-        margin: 0 20px 0 0;
-    }
 }
 
 button,

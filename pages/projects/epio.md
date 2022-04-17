@@ -1,5 +1,8 @@
 ---
 title: 'Epio'
+url: 'https://epio.com/'
+thumb: 'epio_thumb.jpg'
+features: 'Wordpress React'
 ---
 
-Epio website
+Разработка портала под ключ

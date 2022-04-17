@@ -38,6 +38,41 @@
             
             {{ content | safe }}
 
+            <a name="resume"></a>
+            <h3>Резюме</h3>
+            <div class="works">
+                {% for work in collections.works|sort(false, true, 'title') %}
+                    <div class="work">
+                        <a href="{{ work.data.url }}" class="work_title" target="__blank">{{ work.data.title }}</a>
+                        <span class="work_date">{{ work.data.from }} - {{ work.data.to }}</span>
+                        {{ work.data.content | safe }}
+                    </div>
+                {% endfor %}
+            </div>
+
+            <a name="projects"></a>
+            <h3>Проекты</h3>
+            <div class="projects">
+            {% for project in collections.projects %}
+                <div class="project">
+                    <img class="project_image" src="src/img/projects/{{ project.data.thumb }}" alt="{{ project.data.title }}" />
+                    <div class="project_content">
+                        <a href="{{ project.url }}" class="project_title">{{ project.data.title }}</a>
+                        <p class="project_description">
+                            {{ project.data.description }}
+                        </p>
+                        <span class="project_tags">{{ project.data.features }}</span>
+                        <div class="project_bottom">
+                            <a href="{{ project.data.url }}" class="project_link" target="__blank"></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+
+            <a name="articles"></a>
+            <h3>Публикации</h3>
+
         </div>
 
     </main>

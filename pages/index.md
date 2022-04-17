@@ -21,13 +21,3 @@ I can plan, design, build, launch, and maintain a website myself—did I mention
 
 A full-stack developer knows no bounds. And when they find one they cross it without hesitation, boldly going into the unknown to return richer for it.
 
-### <a name="resume"></a>Резюме
-- Abiatec
-- Wargaming
-
-### <a name="projects"></a>Проекты
-{% for project in collections.projects %}
-   - [{{ project.data.title }}]({{ project.url }})
-{% endfor %}
-
-### <a name="articles"></a>Публикации
