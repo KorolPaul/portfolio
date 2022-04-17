@@ -5,27 +5,44 @@
     width: 100%;
     box-sizing: border-box;
     background-color: $cGrey;
-    padding: 24px;
+    padding: 0 $side-indent;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(0);
-    transition: .3s $easeInOutCirc transform;
     z-index: 2;
 
     &_link {
-        font-size: 18px;
-        color: $bg_color;
-        padding: 10px 5px;
+        font-size: 16px;
+        color: $color;
+        padding: 0 16px;
         position: relative;
-        text-decoration: underline;
-        transition: .2s $easing opacity;
+        height: 48px;
+        line-height: 48px;
+        transition: .2s $easing opacity,
+                    .2s $easing color;
 
-        &:hover {
-            opacity: .6;
+        &:hover,
+        &.active {
+            color: $cGreen;
         }
         &:active {
             opacity: .8;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background: transparent;
+            transition: .2s $easing background-color;
+        }
+        &:hover::after,
+        &.active::after,
+        &:active::after {
+            background-color: $cGreen;
         }
     }
  }
