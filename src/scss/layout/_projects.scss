@@ -1,20 +1,32 @@
 .project {
     display: flex;
     position: relative;
-    margin: 0 0 50px;
+    margin: 0 0 80px;
 
     &:nth-child(even) {
         justify-content: flex-end;
     }
 
+    &_image-wrapper {
+        display: contents;
+    }
     &_image {
-        width: 55%;
+        width: 62%;
+        box-shadow: 0 0 20px 2px #13151b;
+        mix-blend-mode: luminosity;
+        filter: grayscale(100%) brightness(90%);
+        transition: .2s $easing filter;
+
+        &:hover {
+            filter: grayscale(0%) brightness(100%);
+            mix-blend-mode: normal;
+        }
     }
     &_content {
         position: absolute;
         right: 0;
         top: 0;
-        width: 55%;
+        width: 45%;
         text-align: right;
 
         .project:nth-child(even) & {
@@ -23,13 +35,28 @@
             left: 0;
         }
     }
+    &_type {
+        font-size: 16px;
+        color: $cGreen;
+        display: block;
+    }
     &_title {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         display: block;
         margin: 0 0 20px;
         color: $color;
         display: block;
+        text-decoration: none;
+        transition: .2s $easing color,
+                    .2s $easing opacity;
+
+        &:hover {
+            color: $cGreen;
+        }
+        &:active {
+            opacity: .6;
+        }
     }
     &_description {
         background-color: #191d26;
@@ -42,12 +69,22 @@
         color: rgba($color, .6);
         font-size: 18px;
         display: block;
-        margin: 0 0 5px;
+        margin: 0 0 13px;
+        word-spacing: 15px;
+        font-size: 15px;
+    }
+    &_bottom {
+        word-spacing: 10px;
     }
     &_link {
         display: inline-block;
         height: 22px;
         width: 22px;
-        background: url(#{$img}/link.svg) no-repeat center / contain;
+        color: $color;
+        vertical-align: middle;
+        
+        &:hover {
+            color: $cGreen;
+        }
     }
 }

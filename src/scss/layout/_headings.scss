@@ -4,18 +4,9 @@
     font-size: 34px;
     line-height: 1.1;
     font-weight: 400;
-    margin: 0 0 70px;
-    @include tablet {
-        font-size: 35px;
-        margin-bottom: 70px;
-    }
+    margin: 0 0 30px;
     @include desktop {
-        font-size: 60px;
-        margin-bottom: 120px;
-    }
-    @include desktop-large {
-        margin-bottom: 130px;
-        font-size: 80px;
+        font-size: 75px;
     }
 }
 %heading-2 {
@@ -36,6 +27,12 @@
         font-size: 48px;
     }
 }
+%heading-4 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0;
+}
 
 h1,
 .heading-1{
@@ -48,4 +45,8 @@ h2,
 h3,
 .heading-3 {
     @extend %heading-3;
+}
+h4,
+.heading-4 {
+    @extend %heading-4;
 }

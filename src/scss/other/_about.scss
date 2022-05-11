@@ -1,0 +1,20 @@
+.about {
+    text-align: left;
+
+    &_content {
+        display: flex;
+    }
+    &_image {
+        max-width: 40%;
+        margin: 0 0 0 50px;
+        box-shadow: 0 0 20px 2px #13151b;
+        mix-blend-mode: luminosity;
+        filter: grayscale(100%);
+        transition: .2s $easing filter;
+
+        &:hover {
+            filter: grayscale(0%);
+            mix-blend-mode: normal;
+        }
+    }
+}

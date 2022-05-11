@@ -4,8 +4,8 @@ html {
 
 body {
     color: $color;
-    background: $bg_color;
     font: #{$font-size__small}/#{1.4} $font-family;
+    background-color: $bg_color;
     padding: 0;
     scroll-behavior: smooth;
     @include tablet {
