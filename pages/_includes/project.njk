@@ -35,11 +35,15 @@
 
     <main>
         <div class="content">
-
+            <div class="content_back">
+                <a class="back" href="http://localhost:8080/#projects"></a>
+            </div>
+            <h1>{{ title }}</h1>
             {{ content | safe }}
-
+            <div class="content_more">
+                <a class="button" href="http://localhost:8080/#projects">К другим проектам</a>
+            </div>
         </div>
-
     </main>
 
     <footer class="footer">
