@@ -1,9 +1,8 @@
 ---
-index: '0'
 title: 'Freelance'
-from: '2011'
-to: '08.2012'
-url: 'https://abiatec.by/'
+from: 'c 2011'
+to: 'наши дни'
+url: 'https://freelance.habr.com/freelancers/paul_king/opinions'
 ---
 
-Верстка и интеграция сайтов.
+Периодически работал над самыми разными проектами. Начинал с верстки, но со временем пришел к Full-stack разработке на основе популярных CMS на php и к разработке web-приложений на **React** и **Vue**.

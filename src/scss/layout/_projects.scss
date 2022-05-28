@@ -1,7 +1,10 @@
 .project {
     display: flex;
     position: relative;
-    margin: 0 0 80px;
+    margin: 0 0 160px;
+    @include desktop {
+        margin-bottom: 80px;
+    }
 
     &:nth-child(even) {
         justify-content: flex-end;

@@ -2,7 +2,7 @@
 title: 'World of Tanks UI'
 url: 'https://worldoftanks.ru/'
 thumb: 'wot_thumb.jpg'
-features: 'React Python'
+features: 'React TypeScript Python'
 description: 'Разработка интерфейсов известной компьютерной игры'
 ---
 

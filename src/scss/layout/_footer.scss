@@ -4,12 +4,11 @@
 
     &_holder {
         @include layout;
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
         padding-top: 32px;
         padding-bottom: 32px;
         @include tablet {
+            display: flex;
+            justify-content: space-between;
             gap: 46px;
         }
         @include desktop {
@@ -21,10 +20,33 @@
     &_right {
         flex-grow: 1;
     }
+    &_left {
+        text-align: center;
+        margin: 0 0 25px;
+        @include tablet {
+            text-align: left;
+            margin: 0;
+        }
+    }
     &_right {
-        text-align: right;
+        text-align: center;
+        @include tablet {
+            text-align: right;
+        }
     }
     &_copyrights {
+        margin-bottom: 6px;
+    }
 
+    a {
+        color: $color;
+        transition: .2s $easing opacity;
+
+        &:hover {
+            opacity: .6;
+        }
+        &:active {
+            opacity: .8;
+        }
     }
 }

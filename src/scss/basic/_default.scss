@@ -14,14 +14,13 @@ body {
 }
 
 a {
+    color: $cRed;
     transition: .2s $easing color;
 
-    &:hover,
-    &.hover {
+    &:hover {
         outline: none;
     }
-    &:active,
-    &.active {
+    &:active {
         outline: none;
     }
 }
@@ -57,4 +56,9 @@ ul {
 a[name] {
     position: relative;
     top: -50px;
+}
+
+code {
+    display: block;
+    background-color: $cGrey;
 }

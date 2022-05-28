@@ -16,22 +16,26 @@
     <meta name="HandheldFriendly" content="true">
 </head>
 <body>
-    <div class="net"></div>
     <header class="header">
-        <nav class="menu">
-            <a href="#about" class="menu_link">
-                Обо мне
-            </a>
-            <a href="#resume" class="menu_link">
+        <div class="header_holder">
+            <nav class="menu">
+                <a href="#about" class="menu_link">
+                    Обо мне
+                </a>
+                <a href="#resume" class="menu_link">
+                    Опыт работы
+                </a>
+                <a href="#projects" class="menu_link">
+                    Проекты
+                </a>
+                <a href="#articles" class="menu_link">
+                    Публикации
+                </a>
+            </nav>
+            <a class="header_button" download href="/pavel_korol_cv.docx">
                 Резюме
             </a>
-            <a href="#projects" class="menu_link">
-                Проекты
-            </a>
-            <a href="#articles" class="menu_link">
-                Публикации
-            </a>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -44,7 +48,7 @@
                 <h3>Обо мне</h3>
                 <div class="about_content">
                     <div class="about_text">
-                        <p>Верстка и интеграция сайтов.</p>
+                        <p>Периодически работал над самыми разными проектами. Начинал с верстки, но со временем пришел к Full-stack разработке на основе популярных CMS на php и к разработке web-приложений на <strong>React</strong> и <strong>Vue</strong>.</p>
 
                     </div>
                     <img class="about_image" src="src/img/avatar.jpg" alt="pavel korol" />
@@ -56,23 +60,24 @@
             <div class="works">
                 
                     <div class="work">
-                        <a href="https://abiatec.by/" class="work_title" target="__blank">Freelance</a>
-                        <span class="work_date">2011 - 08.2012</span>
-                        <p>Верстка и интеграция сайтов.</p>
+                        <a href="https://freelance.habr.com/freelancers/paul_king/opinions" class="work_title" target="__blank">Freelance</a>
+                        <span class="work_date">c 2011 - наши дни</span>
+                        <p>Периодически работал над самыми разными проектами. Начинал с верстки, но со временем пришел к Full-stack разработке на основе популярных CMS на php и к разработке web-приложений на <strong>React</strong> и <strong>Vue</strong>.</p>
 
                     </div>
                 
                     <div class="work">
                         <a href="https://abiatec.by/" class="work_title" target="__blank">Abiatec</a>
                         <span class="work_date">08.2012 - 09.2013</span>
-                        <p>Веб студия. Верстка и интеграция сайтов.</p>
+                        <p>На момент моего устройства - компания, входящая в ТОП-3 веб-студий РБ. Здесь я, в основном, отвечал за верстку и js на уровне, необходимом для типового сайта того времени (то была эпоха jQuery). Также за год работы успел сделать несколько сайтов как Full-stack разрботчик, поработав с фирмкенной CMS, написанной на php.</p>
 
                     </div>
                 
                     <div class="work">
                         <a href="https://wargaming.com/" class="work_title" target="__blank">Wargaming</a>
-                        <span class="work_date">09.201312 - 09.2022</span>
-                        <p>Верстка порталов и лендингов, разработка веб-приложений для внутреннего пользования, разработка интерфейса World of Tanks.</p>
+                        <span class="work_date">09.2013 - наши дни</span>
+                        <p>Здесь удалось попробовать очень много проектов, технологий и видов деятельности: верстка порталов и лендингов (<strong>БЭМ</strong>, <strong>SCSS</strong>, <strong>ES5</strong>, <strong>ES6</strong>, <strong>jQuery</strong>, <strong>knockout</strong>, <strong>backbone</strong>, <strong>Vue</strong>, <strong>python</strong>, <strong>php</strong>), разработка админок для внутреннего пользования (<strong>React</strong>, <strong>material ui</strong>, <strong>Jest</strong>, <strong>Mocha</strong>), разработка интерфейса World of Tanks (<strong>React</strong>).</p>
+<p>Довелось поработать и в больших командах, и в качестве единственного frontend-разработчика в отделе. Попробовать kanban, scrum и прочие методологии управления проектами. Заниматься проведением собеседований и менторством над новичками.</p>
 
                     </div>
                 
@@ -92,7 +97,7 @@
                         <p class="project_description">
                             Разработка интерфейсов известной компьютерной игры
                         </p>
-                        <span class="project_tags">React Python</span>
+                        <span class="project_tags">React TypeScript Python</span>
                         <div class="project_bottom">
                             
                                 <a href="https://worldoftanks.ru/" class="project_link" target="__blank">
@@ -138,7 +143,7 @@
                         
                         <a href="/projects/yoyo/" class="project_title">Yoyo design agency</a>
                         <p class="project_description">
-                            Насыщенный анимациями сайт британского дизайн-агенства
+                            Насыщенный выверенными анимациями сайт британского дизайн-агенства
                         </p>
                         <span class="project_tags">NativeJS TypeScript</span>
                         <div class="project_bottom">
@@ -286,7 +291,7 @@
             <h3>Публикации</h3>
 
             <p>Периодически пишу статьи на Хабр. Вхожу в топ-10 авторов по темам <a href="https://habr.com/ru/hub/html5/">HTML</a> и <a href="https://habr.com/ru/hub/css/">CSS</a></p>
-            <img class="social_icon" src="src/img/habr.jpg" alt="">
+            <img src="src/img/habr.jpg" alt="">
         </div>
 
     </main>
