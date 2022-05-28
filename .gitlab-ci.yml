@@ -1,0 +1,12 @@
+image: "node:lts-alpine"
+
+pages:
+  script:
+  - npm install
+  - npx @11ty/eleventy
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+    
