@@ -5,6 +5,7 @@
         flex-direction: column;
         text-align: left;
         @include desktop {
+            gap: 50px;
             flex-direction: row;
             align-items: flex-start;
         }
@@ -26,7 +27,9 @@
         @include desktop {
             order: initial;
             max-width: 40%;
-            margin: 0 0 0 50px;
+            margin: 0;
+            width: auto;
+            flex-shrink: 0;
         }
 
         &:hover {
